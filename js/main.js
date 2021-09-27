@@ -38,19 +38,6 @@ function mostrarSistemas() {
     .catch(error => console.log(error))
 }
 mostrarSistemas();
-// function mostrarSistemas() {
-//   const contentSistemas = document.querySelector('.sistemas');
-//   fetch(url)
-//     .then(respuesta => respuesta.json())
-//     .then(sistemas => {
-//       sistemas.forEach(sistema => {
-//         contentSistemas.innerHTML += `<p align="center" id=sistema${sistema.id}> <strong>${sistema.texto}</strong><br> 
-//         <img src=${sistema.imagen} class=medidasImgH alt="Reflexología podal"></p>`;
-//       })
-//     })
-//     .catch(error => console.log(error))
-// }
-// mostrarSistemas();
 
 //ARMA FAQS CON UN JSON LOCAL
 function mostrarFaqs() {
@@ -143,7 +130,6 @@ const validateForm = () => {
 }
 
 const noValido = (campo, mensaje) => {
-  // console.log(campo.id);
   const div = document.getElementById('resultado');
   const contenido = document.createTextNode(mensaje);
   div.appendChild(contenido);
@@ -156,13 +142,4 @@ document.getElementById('formReset').addEventListener('click', function () {
   resultado.style.display = "none";
   nombre.focus();
 })
-
-// const noValido = (campo, mensaje) => {
-//   console.log(campo.id);
-//   const div = document.getElementById(`div-${campo.id}`);
-//   const contenido = document.createTextNode(`${mensaje}`);
-//   div.appendChild(contenido);
-//   campo.focus();
-//   return false;
-// }
 
