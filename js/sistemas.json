@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "texto": "Mapa de puntos correspondientes a los órganos.",
+    "imagen": "./img/plantar-organos-dibujados.jpg"
+  },
+  {
+    "id": 2,
+    "texto": "Mapa general de puntos de reflexología podal.",
+    "imagen": "./img/plantar-dorsal-lateral-colores.jpg"
+  },
+  {
+    "id": 3,
+    "texto": "Mapa general del sistema linfático.",
+    "imagen": "./img/plantar-dorsal-lateral-linfatico.jpg"
+  },
+  {
+    "id": 4,
+    "texto": "Mapa general del sistema nervioso.",
+    "imagen": "./img/plantar-dorsal-lateral-nervioso.jpg"
+  },
+  {
+    "id": 5,
+    "texto": "Mapa general del sistema óseo.",
+    "imagen": "./img/plantar-dorsal-lateral-oseo.jpg"
+  },
+  {
+    "id": 6,
+    "texto": "Mapa general del sistema muscular.",
+    "imagen": "./img/plantar-dorsal-lateral-muscular.jpg"
+  }
+]

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Reflexología</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed sobre">
+      <div class="container-fluid">
+        <img class="logo" src="./img/icons8-pies-de-bebé-100-blanco.png" alt="Logo Reflexologia" width="64" height="64">
+        <h1 class="navbar-brand" href="#">Reflexología</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id=menu class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Introducción</a></li>
+            <li class="nav-item"><a class="nav-link" href="#espacioInicial">Sistemas afectados</a></li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Sistemas afectados</a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <li class="nav-item dropdown-item bg-dark">
+                  <a class="nav-link" href="#sistema1">Órganos</a>
+                </li>
+                <li class="nav-item dropdown-item bg-dark">
+                  <a class="nav-link" href="#sistema2">Puntos de Reflexología</a>
+                </li>
+                <li class="nav-item dropdown-item bg-dark">
+                  <a class="nav-link" href="#sistema3">Sistema Linfático</a>
+                </li>
+                <li class="nav-item dropdown-item bg-dark">
+                  <a class="nav-link" href="#sistema4">Sistema Nervioso</a>
+                </li>
+                <li class="nav-item dropdown-item bg-dark">
+                  <a class="nav-link" href="#sistema5">Sistema Óseo</a>
+                </li>
+                <li class="nav-item dropdown-item bg-dark">
+                  <a class="nav-link" href="#sistema6">Sistema Muscular</a>
+                </li>
+              </ul>
+            </li> -->
+            <li class="nav-item"><a class="nav-link" href="#faq">Dudas/Respuestas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#form">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class='principal'>
+    <div class=espacioInicial></div>
+    <h2>Introducción a la Reflexología Podal, desde el automasaje.</h2>
+    <div class='contenedor'></div>
+    
+    <!-- <div class='sistemas'> -->
+      <div id="espacioInicial">a</div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-interval="15000" data-bs-ride="carousel">
+      <div class="carousel-inner sistemas"></div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="false"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- </div> -->
+
+  </main>
+
+  <div id='faq' class='container'>
+    <div class='formularioTitulo'>
+      <h3>Dudas y Respuestas</h3>
+    </div>
+    <ul class='faq' id='faqs'>
+    </ul>
+  </div>
+
+  <form name="contacto" action="" class="formulario container" onsubmit="return validateForm()" id='form'>
+    <h3 class="formularioTitulo">Contáctenos</h3>
+    <div id="div-nombre">
+      <input type="text" class="formularioInput" id='nombre'>
+      <label for="nombre" class="formularioLabel">Nombre</label>
+    </div>
+    <div id="div-correo">
+      <input type="text" class="formularioInput" id='correo'>
+      <label for="correo" class="formularioLabel">Correo</label>
+    </div>
+    <div id="div-telefono">
+      <input type="text" class="formularioInput" id='telefono'>
+      <label for="telefono" class="formularioLabel">Teléfono solo numeros</label>
+    </div>
+    <div id="div-mensaje">
+      <input type="text" class="formularioInput" id='mensaje'>
+      <label for="mensaje" class="formularioLabel">Mensaje</label>
+    </div>
+    <div class="botones">
+      <input type="submit" class="formularioSubmit" id='formSubmit'>
+      <input type="reset" class="formularioSubmit" id='formReset'>
+    </div>
+  </form>
+  <div id="resultado" class="formularioInput"></div>
+  <footer>
+    <div>
+      <p class="footer">© 2021 - Reflexología</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "pregunta": " En que se basa el tratamiento en base a la Reflexología?",
+    "respuesta": "La Reflexología se basa en el tratamiento de zonas reflejas, o lo que es lo mismo, en masajear ciertas zonas que son el reflejo, en una zona concreta del cuerpo (el pie en este caso). Esta tiene su origen en el descubrimiento de la medicina alopática, en la que se observó que a causa de la organización embrionaria primaria en segmentos, existen interconexiones entre órganos internos y zonas de la piel."
+  },
+  {
+    "id": 2,
+    "pregunta": " Que realcion tienen los nervios internos de organos con dolores externos?",
+    "respuesta": "La Reflexología Podal aprovecha los conocimientos sobre las conexiones de nervios entre segmentos internos de órganos, músculos y piel, para influir a nivel reflejo, sobre dolencias desde el exterior. Así, es típico, el dolor de vejiga reflejado en el hombro, las afecciones de corazón reflejadas en el brazo izquierdo o incluso el dolor de estómago reflejado y relacionado con afecciones del raquis dorsal."
+  },
+  {
+    "id": 3,
+    "pregunta": " Que relacion tiene la Reflexología con los pies?",
+    "respuesta": "Existen distintos campos de zonas reflejas, pero hemos elegido el pie por: su tamaño, lo hace cómodo de manejar y su sensibilidad. Estas dos premisas hacen que el pie sea la zona refleja del cuerpo donde se obtiene mayor eficacia terapéutica."
+  },
+  {
+    "id": 4,
+    "pregunta": " Que son las zonas transversales y para que son?",
+    "respuesta": "<strong>1ª línea transversal del pie:</strong> Corresponde a la línea transversal de la articulación de los hombros y pasa a través de las bases de los dedos del pie. Corresponden al área 1 los órganos de la cabeza, el cuello y nuca. Por ello, la zona de reflejo podal del área de nariz y faringe, se encuentra en los pulgares del pie.<br> <strong>2ª línea transversal del pie:</strong> Corresponde a la línea transversal del arco bronquial inferior. En el pie, comprende gran parte de la bóveda plantar. Corresponde al área 2, los órganos del tórax y abdomen superior, así como brazo hasta el codo.<br> <strong>3ª línea transversal del pie:</strong> Corresponde a la de base de la pelvis. Dentro de ella, se encuentran las zonas de las partes del cuerpo y los órganos del área 3."
+  },
+  {
+    "id": 5,
+    "pregunta": " El tratamiento de automasaje es solo en la planta del pie?",
+    "respuesta": "Las zonas reflejas no solo se encuentran en las plantas de los pies, sino también en el lado interior y exterior de los pies y su dorso. No sólo la planta del pie, sino todo el conjunto de él, representa una imagen esquemática del cuerpo y sus órganos."
+  },
+  {
+    "id": 6,
+    "pregunta": " Cuales son los beneficios de la Reflexología?",
+    "respuesta": "1) Es relajante.<br> 2) Reduce el estrés.<br> 3) Mejora la circulación.<br> 4) Permite la liberación de toxinas.<br> 5) Equilibra los distintos sistemas.<br> 6) Revitaliza la energía.<br> 7) Actúa de forma preventiva.<br>"
+  },
+  {
+    "id": 7,
+    "pregunta": " Cuales son las contraindicaciones de la Reflexología?",
+    "respuesta": "1) Enfermedades agudas o crónicas<br> 2) Durante la menstruación en la mujer, no actuar sobre el aparato genital<br> 3) Durante el embarazo, con peligro de abortos o parto prematuro o incluso con antecedentes<br> 4) Enfermedades infecciosas que cursan con un estado febril elevado, dolores fuertes, espasmos<br> 5) Pacientes con cáncer, sobre todo en caso de metástasis<br> 6) En diabetes, si se inyecta insulina, se ha de llevar un control de glucosa<br> 7) Personas débiles, edad avanzada y pacientes que acaban de superar una enfermedad grave<br> 8) En caso de hongos (pie de atleta, micosis), heridas, llagas o cualquier tipo de erupción en los pies<br> 9) Inflamación del sistema venoso o linfático (trombosis, flebitis…)<br>"
+  },
+  {
+    "id": 8,
+    "pregunta": " Como es la tecnica del automasaje para tratar mis dolencias?",
+    "respuesta": "La Reflexología podal se realiza en los dos pies, empezando por el pie izquierdo, tratando todos sus <a href='#sistema2'>puntos reflejos</a> y terminamos tratando todos los puntos reflejos del pie derecho. Se recomienda trabajar los pies desde las zonas de la cabeza hasta el <a href='#sistema3'>sistema linfático</a>. Se suele trabajar los pies, separando los puntos reflejos en áreas corporales: <a href='#sistema1'>sistemas y órganos</a>, <a href='#sistema4'>sistema nervioso</a>, <a href='#sistema5'>sistema óseo</a> y <a href='#sistema6'>sistema muscular</a>. Como regla general, para el tratamiento usamos el pulgar apoyado sobre el punto reflejo a tratar en un ángulo de 90º, podemos realizar el masaje de arriba hacia abajo o viceversa, en el sentido de las agujas del reloj o viceversa. El contacto del pulgar con la piel de la zona refleja nunca se interrumpe. La presión se dosifica de tal manera que no produzcamos un efecto doloroso y si este se produce no sobrepasar el umbral de dolor de cada paciente. La duración de la presión en cada lugar dura desde varios segundos a algunos minutos, para ser efectiva requiere un tiempo de al menos de 7 a 12 segundos."
+  }
+]
