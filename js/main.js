@@ -9,7 +9,7 @@ const contenedor = document.querySelector('.contenedor');
 contenedor.innerHTML = explicacion;
 
 //TOMA LOS SISTEMAS DE REFLEXOLOGIA CON UN JSON LOCAL
-const url = '../js/sistemas.json';
+const url = './js/sistemas.json';
 function mostrarSistemas() {
   const contentSistemas = document.querySelector('.sistemas');
   fetch(url)
@@ -41,7 +41,7 @@ mostrarSistemas();
 
 //ARMA FAQS CON UN JSON LOCAL
 function mostrarFaqs() {
-  const urlFaqs = '../js/faq.json';
+  const urlFaqs = './js/faq.json';
   const contentFaqs = document.querySelector('.faq');
   fetch(urlFaqs).then(respuesta => respuesta.json()).then(faqs => {
     const contentFaqs = document.querySelector('.faq');
