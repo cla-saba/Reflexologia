@@ -1,6 +1,5 @@
+"use strict";
 //VARIABLES
-const correoValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const telefonoValido = /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/;
 const limpiarFormulario = document.getElementById("form");
 const inputs = document.getElementsByClassName('formularioInput');
 
@@ -18,7 +17,7 @@ function mostrarSistemas() {
       sistemas.forEach(sistema => {
         if (sistema.id == 1) {
           contentSistemas.innerHTML +=
-          `<div class="carousel-item active" id=sistema${sistema.id}>
+            `<div class="carousel-item active" id=sistema${sistema.id}>
             <div class="carousel-caption d-none d-md-block">
               <p style="background-color:rgba(0, 0, 0, 0.5);"><strong>${sistema.texto}</strong></p>
             </div>
@@ -26,7 +25,7 @@ function mostrarSistemas() {
           </div>`
         } else {
           contentSistemas.innerHTML +=
-          `<div class="carousel-item" id=sistema${sistema.id}>
+            `<div class="carousel-item" id=sistema${sistema.id}>
             <div class="carousel-caption d-none d-md-block">
               <p style="background-color:rgba(0, 0, 0, 0.5);"><strong>${sistema.texto}</strong></p>
             </div>
@@ -76,70 +75,68 @@ for (var i = 0; i < inputs.length; i++) {
   })
 }
 
-const validateForm = () => {
-  const nombre = document.forms["contacto"]["nombre"]
-  const correo = document.forms["contacto"]["correo"]
-  const telefono = document.forms["contacto"]["telefono"]
-  const mensaje = document.forms["contacto"]["mensaje"]
+// VALIDACION DEL FORMULARIO
+const validar = (e) => {
+  e.preventDefault();
 
-  if (!nombre.value) {
-    return noValido(nombre, 'El nombre no puede ser vacio')
-  } else if (nombre.value.length < 4) {
-    return noValido(nombre, 'El nombre es muy corto')
-  } else {
-    resultado.style.display = "none";
-    const div = document.getElementById(`div-${nombre.id}`);
-    div.removeChild(div.lastChild)
-    console.log(nombre.value);
+  // VALIDACION DE NOMBRE VACIO
+  if (nombre.value === "") {
+    resultado.innerHTML = "<span>Debe completar el nombre de usuario </span>";
+    resultado.style.display = "block";
+    nombre.classList.add("error");
+    nombre.focus();
+    return false;
   }
 
-  if (!correo.value) {
-    return noValido(correo, 'El correo no puede estar vacio')
-  } else if (!correoValido.test(correo.value)) {
-    return noValido(correo, 'El correo no es valido')
-  } else {
-    const div = document.getElementById(`div-${correo.id}`);
-    div.removeChild(div.lastChild)
-    console.log(correo.value);
+  // VALIDACION DE CORREO VACIO Y CORRECTO
+  if (correo.value === "") {
+    resultado.innerHTML = "<span>Debe completar la direccion de email </span>";
+    resultado.style.display = "block";
+    correo.focus();
+    return false;
   }
 
-  if (!telefono.value) {
-    return noValido(telefono, 'El telefono no puede estar vacio')
-  } else if (!telefonoValido.test(telefono.value)) {
-    return noValido(telefono, 'El telefono no es valido')
-  } else {
-    const div = document.getElementById(`div-${telefono.id}`);
-    div.removeChild(div.lastChild)
-    console.log(telefono.value);
+  if (!emailValido(correo.value)) {
+    resultado.innerHTML = "<span>Debe escribir un email valido </span>";
+    resultado.style.display = "block";
+    return false;
   }
 
-  if (!mensaje.value) {
-    return noValido(mensaje, 'El mensaje no puede ser vacio')
-  } else if (mensaje.value.length < 15) {
-    return noValido(mensaje, 'El mensaje es muy corto')
-  } else {
-    const div = document.getElementById(`div-${mensaje.id}`);
-    div.removeChild(div.lastChild)
-    console.log(mensaje.value);
+  // VALIDACION DE TELEFONO VACIO
+  if (telefono.value === "") {
+    resultado.innerHTML = "<span>Debe completar el telefono </span>";
+    resultado.style.display = "block";
+    telefono.focus();
+    return false;
   }
+
+  // VALIDACION DE MENSAJE VACIO
+  if (mensaje.value === "") {
+    resultado.innerHTML = "<span>Debe completar el mensaje </span>";
+    resultado.style.display = "block";
+    mensaje.classList.add("error");
+    mensaje.focus();
+    return false;
+  }
+
+  // SUSCRIPCION CORRECTA
   resultado.innerHTML = "<span>Te suscribiste correctamente </span>";
   resultado.style.color = "green";
   resultado.style.backgroundColor = "rgba(122, 245, 147, 0.5)";
   resultado.style.border = "green solid 2px";
-  resultado.style.display = "block";
-}
 
-const noValido = (campo, mensaje) => {
-  const div = document.getElementById('resultado');
-  const contenido = document.createTextNode(mensaje);
-  div.appendChild(contenido);
-  resultado.style.display = "block";
-  campo.focus();
-  return false;
-}
+  nombre.classList.remove("error");
+  correo.classList.remove("error");
+  telefono.classList.remove("error");
+  mensaje.classList.remove("error");
+  return true;
+};
+
+const emailValido = (email) => { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); };
+
+formSubmit.addEventListener("click", validar);
 
 document.getElementById('formReset').addEventListener('click', function () {
   resultado.style.display = "none";
-  nombre.focus();
+  // nombre.focus();
 })
-
